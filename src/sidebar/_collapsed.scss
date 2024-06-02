@@ -1,0 +1,49 @@
+@use "../utils";
+#sidebar{
+    // collapsing
+    .collapsed{
+        width: 80px;
+        .form-control input{
+            display: none;
+        }
+        .profile{
+            justify-content: center;
+            gap: 0;
+        }
+        .profile-name,.profile-role,.link #chevron,label .text{
+                display: none;
+            }
+        .link{
+            width: 100%;
+                > span {
+                    position: relative;
+                    display: block;
+                }
+        }
+       .link .text{
+        display: none;
+        position: absolute;
+        left: 60px;
+        top: 0;
+        font-size: utils.$fs-xsm;
+        background-color: black;
+        color: white;
+        padding: .3rem;
+        border-radius: 3px;
+        width: max-content;
+       }
+       .link:hover > span .text{
+        display: block;
+       }
+       
+        .theme-toggler-ctn label{
+            padding: 0;
+        }
+        .dropdown{
+            background-color: utils.$w-color;
+            box-shadow: -3px 0px 8px rgba(0, 0, 0, 0.05);
+            left: 40px;
+        }
+    }
+    
+}

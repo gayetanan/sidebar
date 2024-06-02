@@ -1,0 +1,26 @@
+$main-color:#1E293B;
+$w-color:#fff;
+$light-color:#F1F5F9;
+$light-grey:#94A3B8;
+
+$dropdonw-colors:("1":#4740F8,"2":#F89040, "3":#F84040);
+
+$fs-xsm:12px;
+$fs-sm:14px;
+$fs-normal:1rem; //16px;
+
+
+
+
+@mixin flexbox($align,$justify,$direction,$gap){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    gap:$gap
+}
+@mixin query($minHeight){
+    @media (min-height:$minHeight){
+        @content
+    }
+}

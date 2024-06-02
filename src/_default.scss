@@ -1,0 +1,30 @@
+@use "./utils";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+/***reset default style****/
+body,html,input,textarea{
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 400;
+}
+button,input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+i{
+    font-size: 22px;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
